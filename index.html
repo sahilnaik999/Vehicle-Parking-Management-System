@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js."></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="heading">
+     <img src="images/sign.jpg" alt=""> 
+     <h1> Vehicle Parking Management system</h1>
+    </div>
+
+    <div class="content">
+      <div class="form">
+       <div class="entry"> <h2 id="entime">Entry</h2></div> <br>
+        <form action="/" method="POST">
+          Name: <input type="text" name="names"> <br>
+        Contact Number:  <input type="number" name="contacts"> <br>
+        Vehicle Type: <select class="vehicletypes" name="vehicletypes" >
+          <option name="" value="">select vehicle</option>
+          <option name="option1" value="">Two-wheeler</option>
+          <option name="option2" value="">Four wheeler</option>
+        </select> <br>
+        Vehicle Number:  <input type="text" name="vehiclenumbers"> <br>
+        Entry Date and time: <input type="datetime-local" name="entrytimes"> <br>
+        <div class="buttons">
+          <input class="submit" type="submit" value="Submit">
+          <input onclick="pdf()" class="submit" type="submit" value="Generate slip">
+      
+        </div>
+</form>
+           <!-- <button id="btn" onclick="pdf()">Generate slip</button> -->
+      </div>
+      
+  <div class="calculator">
+   <div class="calculate"><h2>Fare calculator</h2></div> <br>
+    <form action="">
+      Vehicle Type: <select name="" id="">
+        <option value="">select vehicle</option>
+        <option value="">Two-wheeler</option>
+        <option value="">Four wheeler</option>
+      </select> <br>
+      Entry Date and time: <input type="datetime-local" value="" id="entry"> <br>
+      Exit Date and time: <input type="datetime-local" value="" id="exit"> <br>
+    </form>
+    <button class="calculate" onclick="func1()">Calculate price</button>
+    <div id="result"></div>
+    
+  </div>
+</div>
+
+    
+    
+
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
+</body>
+</html>

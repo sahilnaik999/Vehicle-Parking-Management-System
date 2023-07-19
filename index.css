@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.content{  
+
+    /* background: url(images/bgrimg.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/parking.jpg'); 
+    background-size: cover;
+    /* position: absolute; */
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+.heading{
+     display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    height: 80px;
+    /* padding: 0px 0 0 320px; */
+   
+   
+}
+.heading h1{
+padding-top: 20px;
+}
+.heading img{
+    position:fixed; 
+	top:0; 
+	left:0;
+    width: 80px;
+    height: 80px;
+  
+}
+.content{
+    display: flex;
+    
+}
+
+ .form{
+   margin: 10px 0 0 100px;
+   /* border: 2px solid black; */
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   /* text-align: center; */
+   width: 500px;
+   font-weight: bold;
+   color: white;
+ 
+   /* margin-top: 50px; */
+   /* margin-left: 180px; */
+
+  
+}
+.form h2{
+   padding-left: 160px;
+   color: white;
+}
+.form .entry{
+    background-color: blue;
+    padding: 5px;
+}
+.form input{
+    text-align: center;       
+    display: block;       
+    width: 289px;       
+    padding: 7px;       
+    margin: 8px 0 0 0;       
+    border: 2px solid black;       
+    font-size: 18px;       
+    border-radius: 15px;  
+}
+.form select{
+    padding: 7px;       
+    /* margin: 8px auto;        */
+    border: 2px solid black;       
+    font-size: 18px;       
+    border-radius: 15px; 
+    display: block;
+    margin: 8px 0 0 0;
+    width: 289px;
+}
+.form .submit{
+    background-color: blue;
+    color: white;
+    
+}
+.form .submit:hover{
+  background-color: white;
+  color: blue;
+}
+
+.calculator{
+    margin: 10px 0px 0 200px;
+    /* border: 2px solid black; */
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    /* text-align: center; */
+    width: 400px;
+    font-weight:bold;
+    color: white;
+    /* margin-top: 50px; */
+    /* margin-left: 180px; */
+   
+  
+}
+.calculator .calculate{
+    background-color: blue;
+    padding: 5px;
+}
+.calculator h2{
+    padding-left: 70px;
+    color: white;
+}
+.calculator input{
+    text-align: center;       
+    display: block;       
+    width: 289px;       
+    padding: 7px;       
+    margin: 8px 0 0 0;       
+    border: 2px solid black;       
+    font-size: 18px;       
+    border-radius: 15px;  
+}
+.calculator select{
+    padding: 7px;       
+    /* margin: 8px auto;        */
+    border: 2px solid black;       
+    font-size: 18px;       
+    border-radius: 15px; 
+    display: block;
+    margin: 8px 0 0 0;
+    width: 289px;
+}
+.calculator button{
+    padding: 20px;       
+    /* margin: 8px auto;        */
+    border: 2px solid black;       
+    font-size: 18px;   
+    background-color: blue;
+    color: white;
+    margin:20px 0 0 80px;
+        
+    /* border-radius: 15px; */
+}
+ #result{
+    font-size: 1.5rem;
+    color: white;
+}
+.calculator button:hover{
+    background-color: white;
+  color: blue;
+}
+.buttons{
+    display: flex;
+    margin-top: -10px;
+}
